@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-ao" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório Digital | DATAVIEW</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dataview: {
+                            dark: '#2d3741',
+                            blue: '#6b8fb1',
+                            light: '#d1e1f0',
+                            accent: '#1ecad3',
+                            navy: '#1a242f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @layer base {
+            h1, h2, h3 { @apply font-display tracking-tighter uppercase italic; }
+        }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .grid-item:hover {
+            border-color: #1ecad3;
+            transform: translateY(-8px);
+            background: rgba(30, 202, 211, 0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #6b8fb1; border-radius: 10px; }
+    </style>
+</head>
+
+<body class="bg-dataview-navy text-white font-sans min-h-screen custom-scrollbar">
+
+    <header class="py-20 px-8 border-b border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-dataview-blue/10 rounded-full blur-[120px]"></div>
+        <div class="max-w-[1400px] mx-auto relative z-10">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-[2px] bg-dataview-accent"></div>
+                <span class="text-dataview-accent font-black uppercase tracking-[6px] text-xs">Knowledge Hub</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl mb-6">Repositório <span class="text-dataview-blue">Digital</span></h1>
+            <p class="text-white/50 text-xl max-w-2xl italic leading-relaxed">
+                Central de recursos técnicos, formulários AGT e legislação atualizada para o suporte à gestão estratégica da sua empresa.
+            </p>
+        </div>
+    </header>
+
+    <nav class="py-8 px-8 sticky top-0 bg-dataview-navy/90 backdrop-blur-md z-50 border-b border-white/5">
+        <div class="max-w-[1400px] mx-auto flex flex-wrap gap-4">
+            <button class="px-6 py-2 bg-dataview-accent text-dataview-navy text-[10px] font-black uppercase tracking-widest rounded-full transition-all">Todos</button>
+            <button class="px-6 py-2 bg-white/5 hover:bg-white/10 text-white text-[10px] font-black uppercase tracking-widest rounded-full transition-all border border-white/10">Fiscalidade (AGT)</button>
+            <button class="px-6 py-2 bg-white/5 hover:bg-white/10 text-white text-[10px] font-black uppercase tracking-widest rounded-full transition-all border border-white/10">Laboral & INSS</button>
+            <button class="px-6 py-2 bg-white/5 hover:bg-white/10 text-white text-[10px] font-black uppercase tracking-widest rounded-full transition-all border border-white/10">Modelos Excel</button>
+        </div>
+    </nav>
+
+    <main class="py-16 px-8">
+        <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="grid-item glass-card p-8 rounded-[2.5rem] transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-dataview-blue/20 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-file-pdf text-3xl text-dataview-blue"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-dataview-accent border border-dataview-accent/30 px-3 py-1 rounded-full uppercase">PDF</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-dataview-accent transition-colors">Código do IVA Atualizado 2026</h3>
+                    <p class="text-white/40 text-xs leading-relaxed mb-8">Regulamento completo sobre as taxas de 7% e 14% e regimes de exclusão.</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-white/5 pt-6">
+                    <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest">2.4 MB</span>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item glass-card p-8 rounded-[2.5rem] transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-green-500/10 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-file-excel text-3xl text-green-500"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-green-500 border border-green-500/30 px-3 py-1 rounded-full uppercase">Excel</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-dataview-accent transition-colors">Modelo 1 - Imposto Industrial</h3>
+                    <p class="text-white/40 text-xs leading-relaxed mb-8">Ficheiro editável para apuramento do lucro tributável e perdas fiscais.</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-white/5 pt-6">
+                    <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest">850 KB</span>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item glass-card p-8 rounded-[2.5rem] transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-dataview-accent/10 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-gavel text-3xl text-dataview-accent"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-dataview-accent border border-dataview-accent/30 px-3 py-1 rounded-full uppercase">Lei</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-dataview-accent transition-colors">Nova Lei Geral do Trabalho</h3>
+                    <p class="text-white/40 text-xs leading-relaxed mb-8">Acesso à Lei n.º 12/23 com as recentes alterações aos contratos.</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-white/5 pt-6">
+                    <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest">3.1 MB</span>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item glass-card p-8 rounded-[2.5rem] transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-table-list text-3xl text-white/60"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-white/30 border border-white/10 px-3 py-1 rounded-full uppercase">PDF</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-dataview-accent transition-colors">Tabela IRT 2026</h3>
+                    <p class="text-white/40 text-xs leading-relaxed mb-8">Escalões de rendimento e parcelas a abater atualizadas.</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-white/5 pt-6">
+                    <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest">420 KB</span>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item glass-card p-8 rounded-[2.5rem] transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-dataview-blue/20 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-shield-check text-3xl text-dataview-blue"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-dataview-blue border border-dataview-blue/30 px-3 py-1 rounded-full uppercase">Guia</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-dataview-accent transition-colors">Manual de Boas Práticas INSS</h3>
+                    <p class="text-white/40 text-xs leading-relaxed mb-8">Guia prático para submissão de folhas de remunerações sem erros.</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-white/5 pt-6">
+                    <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest">1.5 MB</span>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item glass-card p-8 rounded-[2.5rem] transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-dataview-accent/10 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-calendar-days text-3xl text-dataview-accent"></i>
+                        </div>
+                        <span class="text-[9px] font-bold text-dataview-accent border border-dataview-accent/30 px-3 py-1 rounded-full uppercase">IMG</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 leading-tight group-hover:text-dataview-accent transition-colors">Calendário Fiscal Angola 2026</h3>
+                    <p class="text-white/40 text-xs leading-relaxed mb-8">Infográfico com todos os prazos críticos de entrega e pagamento.</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-white/5 pt-6">
+                    <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest">2.1 MB</span>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-white/20 text-[10px] uppercase tracking-[4px]">
+            Dataview Consulting • Todos os direitos reservados © 2026
+        </p>
+    </footer>
+
+</body>
+</html>
