@@ -49,8 +49,9 @@
 
     <style>
         @layer base {
-            body { @apply antialiased overflow-x-hidden; }
+            body { @apply antialiased overflow-x-hidden; color: #1a242f }
             h1, h2, h3 { @apply font-display tracking-tighter uppercase italic; }
+
         }
         .hero-gradient { background: linear-gradient(135deg, rgba(26,36,47,1) 40%, rgba(45,55,65,0.9) 60%); }
         .glass-nav { background: rgba(26, 36, 47, 0.85); backdrop-filter: blur(15px); }
@@ -105,7 +106,7 @@
                 </div>
             </li>
             <li><a href="#metodologia" class="hover:text-white transition">Metodologia</a></li>
-            <li><a href="#academia" class="hover:text-white transition italic text-dataview-accent">Academia DV</a></li>
+            <li><a href="#academia" class="hover:text-white transition italic text-dataview-accent">Downloads</a></li>
             <li><a href="#contacto" class="hover:text-white transition">Contactos</a></li>
         </ul>
 
@@ -189,7 +190,7 @@
 
                     <div class="mt-8 grid grid-cols-2 gap-4">
                         <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                            <p class="text-2xl font-black text-white italic">150+</p>
+                            <p class="text-2xl font-black text-white italic">+</p>
                             <p class="text-[7px] text-white/30 uppercase tracking-[1px] mt-1">Empresas Auditadas</p>
                         </div>
                         <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
@@ -203,7 +204,7 @@
     </div>
 </section>
 
-
+<!-- Trust: Ajustadas para melhor espaçamento e legibilidade -->
     <div class="py-12 bg-white border-b border-slate-100">
         <div class="max-w-[1600px] mx-auto px-8">
             <p class="text-center text-[10px] font-black text-slate-300 uppercase tracking-[6px] mb-10 italic">Liderando com rigor em diversos setores</p>
@@ -375,7 +376,7 @@
 </section>
 
 
-  <section class="py-16 md:px-20 bg-dataview-silver/20">
+  <section  class="py-16 md:px-20 bg-dataview-silver/20">
     <div class="max-w-[1280px] mx-auto px-8">
         
         <!-- Header mais próximo da tabela (mb-12) -->
@@ -499,7 +500,7 @@
             <!-- Coluna Visual: Caixa de Melhoria Contínua -->
             <div class="relative flex justify-center" data-aos="zoom-in">
                 <!-- Reduzi o tamanho da caixa de 400px+ para max-w-sm -->
-                <div style="background-image: url('./img/pexels-gustavo-fring-7446945.jpg');" class="aspect-square w-full max-w-[360px] bg-dataview-navy rounded-[3rem] overflow-hidden rotate-2 flex items-center justify-center p-12 shadow-2xl relative">
+                <div style="background-image: url('./img/empresario-pensativo-lendo-um-e-mail-em-um-computador-no-escritorio_637285-6740.webp');" class="aspect-square w-full bg-center bg-cover max-w-[360px] bg-dataview-navy rounded-[3rem] overflow-hidden rotate-2 flex items-center justify-center p-12 shadow-2xl relative">
                      <i class="fa-solid fa-gear text-[10rem] text-white/5 animate-spin-slow absolute opacity-50"></i>
                      <div class="relative z-10 text-center">
                         <i class="fa-solid fa-infinity text-6xl text-dataview-accent mb-6"></i>
@@ -507,7 +508,7 @@
                      </div>
                 </div>
                 <!-- Efeito Glow mais discreto -->
-                <div class="absolute -top-6 -left-6 w-32 h-32 bg-dataview-accent rounded-full blur-[80px] opacity-"></div>
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-dataview-accent rounded-full blur-[80px] opacity-50"></div>
             </div>
             
         </div>
@@ -775,7 +776,6 @@
             once: true,
             offset: 100
         });
-
 
 
         // Smooth Scroll para Âncoras
