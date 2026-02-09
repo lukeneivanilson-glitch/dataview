@@ -63,97 +63,92 @@
     </style>
 </head>
 <body class="font-sans text-slate-700 bg-white custom-scrollbar">
-
-    <div class="hidden lg:block bg-dataview-navy border-b border-white/5 py-2 px-8">
-        <div class="max-w-[1600px] mx-auto flex justify-between items-center text-[10px] font-bold uppercase tracking-[2px] text-white/50">
-            <div class="flex gap-8">
-                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-dataview-accent"></i> Edifício Sky Center, Talatona, Luanda</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-dataview-accent"></i> Seg - Sex: 08:00 - 17:30</span>
-            </div>
-            <div class="flex gap-6 items-center">
-                <a href="mailto:geral@dataview.ao" class="hover:text-white transition">geral@dataview.ao</a>
-                <span class="w-px h-3 bg-white/10"></span>
-                <div class="flex gap-3">
-                    <i class="fa-brands fa-linkedin-in hover:text-dataview-accent cursor-pointer"></i>
-                    <i class="fa-brands fa-whatsapp hover:text-dataview-accent cursor-pointer"></i>
-                </div>
+<!-- TOP BAR: Ajustada para 1440px -->
+<div class="hidden lg:block bg-dataview-navy border-b border-white/5 py-2 px-8">
+    <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] font-bold uppercase tracking-[2px] text-white/50">
+        <div class="flex gap-8">
+            <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-dataview-accent"></i> Edifício Sky Center, Talatona, Luanda</span>
+            <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-dataview-accent"></i> Seg - Sex: 08:00 - 17:30</span>
+        </div>
+        <div class="flex gap-6 items-center">
+            <a href="mailto:geral@dataview.ao" class="hover:text-white transition">geral@dataview.ao</a>
+            <span class="w-px h-3 bg-white/10"></span>
+            <div class="flex gap-3">
+                <i class="fa-brands fa-linkedin-in hover:text-dataview-accent cursor-pointer"></i>
+                <i class="fa-brands fa-whatsapp hover:text-dataview-accent cursor-pointer"></i>
             </div>
         </div>
     </div>
+</div>
 
-    <nav class="sticky top-0 z-[100] glass-nav border-b border-white/5 transition-all duration-500" id="mainNav">
-        <div class="max-w-[1600px] mx-auto px-8 py-5 flex justify-between items-center">
-            <div class="flex items-center gap-3 group cursor-pointer">
-                <div class="relative w-10 h-12 bg-white flex flex-col justify-end p-1 overflow-hidden transition-transform group-hover:scale-105">
-                    <div class="w-full bg-dataview-blue h-1/3 mb-1 animate-pulse"></div>
-                    <div class="w-full bg-dataview-dark h-1/2"></div>
-                </div>
-                <div>
-                    <span class="font-display font-black text-white text-2xl tracking-tighter leading-none block uppercase italic">DATAVIEW</span>
-                    <span class="text-[8px] font-bold text-dataview-blue tracking-[4px] uppercase">Contabilidade & Gestão</span>
-                </div>
+<!-- NAVBAR: Altura otimizada e alinhada -->
+<nav class="sticky top-0 z-[100] glass-nav border-b border-white/5 transition-all duration-500" id="mainNav">
+    <div class="max-w-[1440px] mx-auto px-12 py-4 flex justify-between items-center">
+        <!-- Logo -->
+            <div class="relative w-auto h-auto  flex flex-col justify-end p-1 overflow-hidden transition-transform group-hover:scale-105">
+                <img src="./img/2-removebg-preview.png" alt="DataView Logo" class="md:w-32 w-24 h-auto object-contain">
             </div>
+    
 
-            <ul class="hidden xl:flex items-center gap-10 text-[11px] font-extrabold uppercase tracking-[2px] text-white/70">
-                <li><a href="#home" class="text-white border-b-2 border-dataview-accent pb-1">Início</a></li>
-                <li class="relative group">
-                    <a href="#servicos" class="hover:text-white transition flex items-center gap-2">Serviços <i class="fa-solid fa-chevron-down text-[8px]"></i></a>
-                    <div class="absolute top-full left-0 mt-5 w-64 bg-dataview-navy border border-white/10 p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 transition-all shadow-2xl">
-                        <div class="space-y-4">
-                            <a href="#" class="block text-white/60 hover:text-dataview-accent text-[10px]">Contabilidade Geral</a>
-                            <a href="#" class="block text-white/60 hover:text-dataview-accent text-[10px]">Assessoria Fiscal (AGT)</a>
-                            <a href="#" class="block text-white/60 hover:text-dataview-accent text-[10px]">Recursos Humanos</a>
-                            <a href="#" class="block text-white/60 hover:text-dataview-accent text-[10px]">Auditoria Financeira</a>
-                        </div>
+        <!-- Menu links -->
+        <ul class="hidden xl:flex items-center gap-8 text-[10px] font-extrabold uppercase tracking-[2px] text-white/70">
+            <li><a href="#home" class="text-white border-b-2 border-dataview-accent pb-1">Início</a></li>
+            <li class="relative group">
+                <a href="#servicos" class="hover:text-white transition flex items-center gap-2">Serviços <i class="fa-solid fa-chevron-down text-[8px]"></i></a>
+                <div class="absolute top-full left-0 mt-5 w-64 bg-dataview-navy border border-white/10 p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 transition-all shadow-2xl">
+                    <div class="space-y-4">
+                        <a href="#" class="block text-white/60 hover:text-dataview-accent">Contabilidade Geral</a>
+                        <a href="#" class="block text-white/60 hover:text-dataview-accent">Assessoria Fiscal (AGT)</a>
+                        <a href="#" class="block text-white/60 hover:text-dataview-accent">Recursos Humanos</a>
+                        <a href="#" class="block text-white/60 hover:text-dataview-accent">Auditoria Financeira</a>
                     </div>
-                </li>
-                <li><a href="#metodologia" class="hover:text-white transition">Metodologia</a></li>
-                <li><a href="#academia" class="hover:text-white transition italic text-dataview-accent">Academia DV</a></li>
-                <li><a href="#contacto" class="hover:text-white transition">Contactos</a></li>
-            </ul>
+                </div>
+            </li>
+            <li><a href="#metodologia" class="hover:text-white transition">Metodologia</a></li>
+            <li><a href="#academia" class="hover:text-white transition italic text-dataview-accent">Academia DV</a></li>
+            <li><a href="#contacto" class="hover:text-white transition">Contactos</a></li>
+        </ul>
 
-            <div class="flex items-center gap-4">
-                <button class="hidden md:block text-white text-[10px] font-black uppercase tracking-widest border border-white/20 px-6 py-3 rounded-xl hover:bg-white/5 transition">Área de Cliente</button>
-                <button class="bg-dataview-blue text-white text-[10px] font-black uppercase tracking-widest px-8 py-3 rounded-xl shadow-xl shadow-dataview-blue/20 hover:scale-105 transition-all">Solicitar Proposta</button>
-            </div>
+        <!-- Botões -->
+        <div class="flex items-center gap-4">
+            <button class="hidden md:block text-white text-[9px] font-black uppercase tracking-widest border border-white/20 px-5 py-3 rounded-xl hover:bg-white/5 transition">Área de Cliente</button>
+            <button class="bg-dataview-blue text-white text-[9px] font-black uppercase tracking-widest px-6 py-3 rounded-xl shadow-xl shadow-dataview-blue/20 hover:scale-105 transition-all">Solicitar Proposta</button>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section id="home" class="relative h-screen min-h-[650px] max-h-[1080px] flex items-center overflow-hidden">
-    <!-- Background e Glows permanecem iguais -->
+<!-- HERO SECTION: Altura calculada para evitar scroll -->
+<section id="home" class="relative  h-[calc(100vh-140px)] min-h-[600px] flex items-center overflow-hidden">
+    <!-- BG e Efeitos -->
     <div class="absolute inset-0 z-0">
-        <img src="./img/home.jpg" class="w-full h-full object-cover opacity-40">
-        <div class="absolute inset-0 hero-gradient"></div>
+        <img src="./img/home.jpg" class="w-full h-full object-cover">
+        <div class="absolute inset-0 "></div>
     </div>
     
-    <div class="absolute -left-20 top-10 w-[500px] h-[500px] bg-dataview-blue/10 rounded-full blur-[120px] animate-pulse-slow"></div>
-
-    <!-- Container com Padding Top reduzido (pt-12) e Gap menor (gap-8) -->
-    <div class="max-w-[1440px] mx-auto px-8 relative z-10 grid lg:grid-cols-12 gap-8 items-center pt-12">
+    <!-- Container Principal -->
+    <div class="max-w-[1440px] mx-auto px-4 relative z-10 grid lg:grid-cols-12 gap-24 items-center">
         
-        <!-- Coluna Esquerda: Texto -->
+        <!-- Conteúdo Textual -->
         <div class="lg:col-span-7" data-aos="fade-right">
             <div class="flex items-center gap-4 mb-4">
-                <div class="w-8 h-[2px] bg-dataview-accent"></div>
+                <div class="w-8 h-[px] bg-dataview-accent"></div>
                 <span class="text-dataview-accent font-black uppercase tracking-[4px] text-[10px]">Excelência em Angola</span>
             </div>
             
-            <!-- Título reduzido de 140px para 100px para não empurrar o resto -->
-            <h1 class="text-6xl md:text-[100px] leading-[0.8] mb-4 relative font-black">
+            <h1 class="text-6xl md:text-[90px] lg:text-[100px] leading-[0.8] mb-4 relative font-black text-white">
                 DATAVIEW
                 <span class="absolute -top-6 -left-2 text-stroke text-6xl opacity-10 select-none">ESTRATÉGIA</span>
             </h1>
             
-            <h2 class="text-2xl md:text-4xl font-display font-bold text-dataview-light/90 mb-6 tracking-tight leading-tight">
+            <h2 class="text-2xl md:text-4xl font-display font-bold text-dataview-light/90 mb-6 tracking-tight leading-tight uppercase">
                 CONTABILIDADE & GESTÃO <br>
                 <span class="text-white italic">APRESENTAÇÃO DO NEGÓCIO</span>
             </h2>
 
-            <!-- Box de citação mais compacta -->
             <div class="flex items-start gap-4 mb-8 p-4 bg-white/5 border-l-4 border-dataview-blue backdrop-blur-sm rounded-r-xl max-w-lg">
                 <i class="fa-solid fa-quote-left text-dataview-blue text-sm mt-1"></i>
                 <p class="italic text-base text-white/70 leading-relaxed">
-                    "Do seu património cuidamos nós! Transformamos números em visão estratégica."
+                    "Do seu património cuidamos nós! Transformamos números em visão estratégica para o crescimento sustentável."
                 </p>
             </div>
 
@@ -162,16 +157,15 @@
                     <span class="relative text-white font-black uppercase text-[10px] tracking-widest">Iniciar Consultoria</span>
                 </a>
                 <a href="#servicos" class="px-10 py-4 border border-white/20 text-white rounded-xl font-black uppercase text-[10px] tracking-widest hover:bg-white/5 transition flex items-center gap-2">
-                    Pilares <i class="fa-solid fa-arrow-down-long animate-bounce text-[10px]"></i>
+                    Nossos Pilares <i class="fa-solid fa-arrow-down-long animate-bounce text-[10px]"></i>
                 </a>
             </div>
         </div>
 
-        <!-- Coluna Direita: Card de Dados (Reduzido em 15%) -->
-        <div class="lg:col-span-5 relative" data-aos="zoom-in">
-            <div class="relative z-10 p-1 bg-gradient-to-br from-white/20 to-transparent rounded-[2.5rem] shadow-2xl backdrop-blur-md">
+        <!-- Card de Estatísticas -->
+        <div class="lg:col-span-5 relative hidden lg:block" data-aos="zoom-in">
+            <div class="relative z-10 p-1 border-dataview-blue backdrop-blur-sm from-white/20 to-transparent rounded-[2.5rem] shadow-2xl">
                 <div class="bg-dataview-navy rounded-[2.3rem] overflow-hidden border border-white/10 p-8">
-                    
                     <div class="space-y-6">
                         <div>
                             <div class="flex justify-between text-[9px] text-white/60 mb-2 uppercase font-bold tracking-widest">
@@ -207,11 +201,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Indicador de Scroll menor -->
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
-        <div class="w-[1px] h-12 bg-gradient-to-b from-dataview-accent to-transparent"></div>
-    </div>
 </section>
 
 
@@ -228,440 +217,555 @@
         </div>
     </div>
 
-    <section id="sobre" class="py-32 bg-white relative overflow-hidden">
-        <div class="max-w-[1600px] mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
-            <div class="relative" data-aos="fade-up">
-                <div class="aspect-square bg-dataview-silver rounded-[4rem] overflow-hidden relative group">
-                    <img src="https://images.unsplash.com/photo-1600880212319-7524e272792b?q=80&w=2070" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-dataview-dark/20 group-hover:bg-transparent transition-colors"></div>
-                </div>
-                <div class="absolute -bottom-12 -right-12 p-12 bg-dataview-blue rounded-[3rem] shadow-2xl text-white max-w-xs">
-                    <h5 class="text-4xl font-black mb-2 italic tracking-tighter">10 ANOS</h5>
-                    <p class="text-[10px] font-bold uppercase tracking-widest opacity-80 leading-relaxed">De experiência consolidada no mercado angolano.</p>
-                </div>
-            </div>
+    <section id="sobre" class="py-12 lg:py-16 bg-white relative overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        
+<!-- Bloco de Imagem: Controlado em md para não ser full-width -->
+<div class="relative w-full md:w-96 lg:w-full mx-auto lg:mx-0 md:px-20" data-aos="fade-up">
+    
+    <!-- Container da Imagem -->
+    <div class="aspect-square bg-dataview-silver rounded-[3rem] lg:rounded-[3.5rem] overflow-hidden relative group shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1600880212319-7524e272792b?q=80&w=2070" 
+             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+             alt="Equipa Dataview">
+        <div class="absolute inset-0 bg-dataview-dark/10 group-hover:bg-transparent transition-colors"></div>
+    </div>
+    
+    <!-- Badge: Ajustado para ser responsivo também no posicionamento -->
+    <div class="absolute -bottom-6 -right-6 lg:-bottom-8 lg:-right-8 p-8 lg:p-10 bg-dataview-blue rounded-[2.5rem] lg:rounded-[3rem] shadow-2xl text-white max-w-[240px] lg:max-w-[280px]">
+        <h5 class="text-2xl lg:text-4xl font-black mb-2 italic tracking-tighter uppercase leading-none">10 ANOS</h5>
+        <p class="text-[9px] lg:text-[10px] font-bold uppercase tracking-[2px] opacity-80 leading-relaxed">
+            Experiência consolidada e visão estratégica no mercado angolano.
+        </p>
+    </div>
+</div>
 
-            <div data-aos="fade-left">
-                <span class="text-dataview-blue font-black uppercase tracking-[4px] text-xs block mb-6 italic">O Nosso DNA</span>
-                <h3 class="text-5xl lg:text-6xl text-dataview-dark mb-10 italic">Compromisso com a <span class="text-dataview-blue">Transparência</span>.</h3>
-                <p class="text-xl text-slate-500 leading-relaxed mb-10">
-                    Na DATAVIEW, não nos limitamos a registar fatos patrimoniais. Atuamos como o braço direito da gestão, garantindo que cada decisão financeira seja fundamentada em dados precisos e em total conformidade com o sistema tributário de Angola.
-                </p>
-                
-                <div class="grid sm:grid-cols-2 gap-8">
-                    <div class="flex gap-5">
-                        <div class="w-12 h-12 rounded-2xl bg-dataview-blue/10 flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-bullseye text-dataview-blue text-xl"></i>
-                        </div>
-                        <div>
-                            <h6 class="font-display font-bold text-dataview-dark mb-2 uppercase italic text-sm">Missão</h6>
-                            <p class="text-xs text-slate-500 leading-relaxed">Providenciar soluções de gestão que mitiguem riscos e potenciem lucros.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-5">
-                        <div class="w-12 h-12 rounded-2xl bg-dataview-accent/10 flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-eye text-dataview-accent text-xl"></i>
-                        </div>
-                        <div>
-                            <h6 class="font-display font-bold text-dataview-dark mb-2 uppercase italic text-sm">Visão</h6>
-                            <p class="text-xs text-slate-500 leading-relaxed">Ser a referência nacional em outsourcing contabilístico e auditoria estratégica.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="servicos" class="py-32 bg-dataview-navy text-white section-divider">
-        <div class="max-w-[1600px] mx-auto px-8">
-            <div class="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
-                <div class="max-w-2xl" data-aos="fade-right">
-                    <span class="text-dataview-accent font-black uppercase tracking-[4px] text-xs block mb-6 italic">Portfólio de Serviços</span>
-                    <h3 class="text-5xl lg:text-7xl mb-6">Soluções <span class="text-dataview-blue">360º</span>.</h3>
-                    <p class="text-white/50 text-lg italic">Serviços integrados para empresas que procuram liderança de mercado.</p>
-                </div>
-                <div class="pb-4" data-aos="fade-left">
-                    <button class="px-10 py-4 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-dataview-accent hover:text-dataview-navy transition-all duration-500">
-                        Baixar Catálogo PDF <i class="fa-solid fa-download ml-2"></i>
-                    </button>
-                </div>
-            </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="group p-10 bg-white/5 border border-white/5 rounded-[3rem] hover:bg-dataview-blue transition-all duration-700 hover:-translate-y-4" data-aos="fade-up">
-                    <div class="w-20 h-20 rounded-3xl bg-dataview-blue/20 flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
-                        <i class="fa-solid fa-calculator text-3xl text-dataview-accent group-hover:text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-6 italic tracking-tight">Contabilidade Geral e Analítica</h4>
-                    <p class="text-white/40 group-hover:text-white/80 text-sm leading-relaxed mb-8">
-                        Processamento de dados segundo o PGC, encerramento de contas e relatórios mensais de performance financeira.
-                    </p>
-                    <ul class="space-y-3 text-[10px] font-black uppercase tracking-widest text-dataview-blue group-hover:text-white/60">
-                        <li><i class="fa-solid fa-check mr-2"></i> Balancetes</li>
-                        <li><i class="fa-solid fa-check mr-2"></i> Fluxos de Caixa</li>
-                    </ul>
-                </div>
-
-                <div class="group p-10 bg-white/5 border border-white/5 rounded-[3rem] hover:bg-dataview-dark transition-all duration-700 hover:-translate-y-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 rounded-3xl bg-dataview-accent/20 flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
-                        <i class="fa-solid fa-scale-balanced text-3xl text-dataview-accent group-hover:text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-6 italic tracking-tight">Consultoria Fiscal Estratégica</h4>
-                    <p class="text-white/40 group-hover:text-white/80 text-sm leading-relaxed mb-8">
-                        Apuramento rigoroso de IVA, IRT, Imposto Industrial e Imposto de Selo. Representação técnica junto da AGT.
-                    </p>
-                    <ul class="space-y-3 text-[10px] font-black uppercase tracking-widest text-dataview-accent group-hover:text-white/60">
-                        <li><i class="fa-solid fa-check mr-2"></i> Planeamento Fiscal</li>
-                        <li><i class="fa-solid fa-check mr-2"></i> Submissão Eletrónica</li>
-                    </ul>
-                </div>
-
-                <div class="group p-10 bg-white/5 border border-white/5 rounded-[3rem] hover:bg-dataview-blue transition-all duration-700 hover:-translate-y-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 rounded-3xl bg-dataview-blue/20 flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
-                        <i class="fa-solid fa-users-gear text-3xl text-dataview-accent group-hover:text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-6 italic tracking-tight">Gestão de Capital Humano</h4>
-                    <p class="text-white/40 group-hover:text-white/80 text-sm leading-relaxed mb-8">
-                        Processamento de salários, gestão de segurança social (INSS), contratos de trabalho e consultoria na LGT.
-                    </p>
-                    <ul class="space-y-3 text-[10px] font-black uppercase tracking-widest text-dataview-blue group-hover:text-white/60">
-                        <li><i class="fa-solid fa-check mr-2"></i> Mapas de Remuneração</li>
-                        <li><i class="fa-solid fa-check mr-2"></i> IRT & INSS</li>
-                    </ul>
-                </div>
-
-                <div class="group p-10 bg-white/5 border border-white/5 rounded-[3rem] hover:bg-dataview-dark transition-all duration-700 hover:-translate-y-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 rounded-3xl bg-dataview-accent/20 flex items-center justify-center mb-10 group-hover:bg-white/20 transition-colors">
-                        <i class="fa-solid fa-magnifying-glass-chart text-3xl text-dataview-accent group-hover:text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-6 italic tracking-tight">Auditoria & Compliance</h4>
-                    <p class="text-white/40 group-hover:text-white/80 text-sm leading-relaxed mb-8">
-                        Exame detalhado às demonstrações financeiras, verificação de conformidade legal e auditoria de processos.
-                    </p>
-                    <ul class="space-y-3 text-[10px] font-black uppercase tracking-widest text-dataview-accent group-hover:text-white/60">
-                        <li><i class="fa-solid fa-check mr-2"></i> Auditoria Interna</li>
-                        <li><i class="fa-solid fa-check mr-2"></i> Relatórios de Risco</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-32 bg-dataview-silver/30">
-        <div class="max-w-[1400px] mx-auto px-8">
-            <div class="text-center mb-20" data-aos="fade-up">
-                <span class="text-dataview-blue font-black uppercase tracking-[4px] text-[10px] block mb-4 italic">Observatório Fiscal 2026</span>
-                <h3 class="text-4xl lg:text-5xl text-dataview-dark italic">Guia de Obrigações <span class="text-dataview-blue">AGT</span>.</h3>
-            </div>
-
-            <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-slate-100" data-aos="zoom-in">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-dataview-dark text-white font-display text-[10px] uppercase tracking-[3px]">
-                                <th class="p-8">Imposto / Contribuição</th>
-                                <th class="p-8">Incidência / Taxa</th>
-                                <th class="p-8">Prazo de Entrega</th>
-                                <th class="p-8 text-center">Status 2026</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm font-medium">
-                            <tr class="border-b border-slate-50 hover:bg-dataview-light/20 transition">
-                                <td class="p-8 font-bold text-dataview-dark italic text-base">IVA - Imposto sobre Valor Acrescentado</td>
-                                <td class="p-8 text-slate-500">7% ou 14% (Regime Geral)</td>
-                                <td class="p-8 text-slate-500">Até ao fim do mês seguinte</td>
-                                <td class="p-8 text-center">
-                                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-tighter">Vigente</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-slate-50 hover:bg-dataview-light/20 transition">
-                                <td class="p-8 font-bold text-dataview-dark italic text-base">IRT - Imposto sobre Rendimento de Trabalho</td>
-                                <td class="p-8 text-slate-500">Progressivo (até 25%)</td>
-                                <td class="p-8 text-slate-500">Até ao dia 30 do mês seguinte</td>
-                                <td class="p-8 text-center">
-                                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-tighter">Vigente</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-slate-50 hover:bg-dataview-light/20 transition">
-                                <td class="p-8 font-bold text-dataview-dark italic text-base">Imposto Industrial</td>
-                                <td class="p-8 text-slate-500">25% (Taxa Geral)</td>
-                                <td class="p-8 text-slate-500">Declaração Modelo 1 (Maio)</td>
-                                <td class="p-8 text-center">
-                                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-tighter">Vigente</span>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-dataview-light/20 transition">
-                                <td class="p-8 font-bold text-dataview-dark italic text-base">INSS - Segurança Social</td>
-                                <td class="p-8 text-slate-500">3% (Empregado) + 8% (Empresa)</td>
-                                <td class="p-8 text-slate-500">Até ao dia 10 do mês seguinte</td>
-                                <td class="p-8 text-center">
-                                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-tighter">Vigente</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <!-- Conteúdo Textual -->
+        <div data-aos="fade-left">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-[1.5px] bg-dataview-blue"></div>
+                <span class="text-dataview-blue font-black uppercase tracking-[3px] text-[9px] italic">O Nosso DNA</span>
             </div>
             
-            <div class="mt-12 flex justify-center">
-                <p class="text-slate-400 italic text-xs">* Esta tabela serve apenas como guia informativo. Consulte sempre os nossos técnicos para casos específicos.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="metodologia" class="py-32 bg-white">
-        <div class="max-w-[1600px] mx-auto px-8">
-            <div class="grid lg:grid-cols-2 gap-20 items-center">
-                <div data-aos="fade-right">
-                    <span class="text-dataview-accent font-black uppercase tracking-[4px] text-xs block mb-6 italic">Workflow</span>
-                    <h3 class="text-5xl lg:text-7xl text-dataview-dark mb-10">Como <span class="text-dataview-blue">Operamos</span>.</h3>
-                    
-                    <div class="space-y-12">
-                        <div class="flex gap-8 group">
-                            <div class="text-6xl font-display font-black text-slate-100 group-hover:text-dataview-blue/20 transition-colors">01</div>
-                            <div>
-                                <h5 class="text-xl font-bold text-dataview-dark mb-3 uppercase italic">Diagnóstico e Triagem</h5>
-                                <p class="text-slate-500 leading-relaxed text-sm">Avaliamos o estado atual da sua contabilidade e identificamos passivos ocultos ou irregularidades fiscais imediatas.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-8 group">
-                            <div class="text-6xl font-display font-black text-slate-100 group-hover:text-dataview-accent/20 transition-colors">02</div>
-                            <div>
-                                <h5 class="text-xl font-bold text-dataview-dark mb-3 uppercase italic">Setup de Conformidade</h5>
-                                <p class="text-slate-500 leading-relaxed text-sm">Implementação de processos digitais e organização da documentação sob as normas do PGC e regulamentos da AGT.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-8 group">
-                            <div class="text-6xl font-display font-black text-slate-100 group-hover:text-dataview-blue/20 transition-colors">03</div>
-                            <div>
-                                <h5 class="text-xl font-bold text-dataview-dark mb-3 uppercase italic">Gestão e Reporting Mensal</h5>
-                                <p class="text-slate-500 leading-relaxed text-sm">Monitorização contínua com entrega de relatórios de gestão, mapas fiscais e aconselhamento estratégico permanente.</p>
-                            </div>
-                        </div>
+            <!-- Título: Reduzido de 5xl para 4xl -->
+            <h3 class="text-3xl lg:text-4xl text-dataview-dark mb-6 italic font-black leading-tight">
+                Compromisso com a <br>
+                <span class="text-dataview-blue">Transparência Digital</span>.
+            </h3>
+            
+            <!-- Texto: Reduzido de text-lg para text-base e margem inferior reduzida -->
+            <p class="text-base text-slate-500 leading-relaxed mb-8 max-w-xl">
+                Na <span class="font-bold text-dataview-dark">DATAVIEW</span>, não nos limitamos a registar fatos patrimoniais. Atuamos como o braço direito da gestão, garantindo conformidade total com o sistema tributário de Angola (AGT).
+            </p>
+            
+            <!-- Grid de Missão e Visão: Gaps reduzidos -->
+            <div class="grid sm:grid-cols-2 gap-6 lg:gap-8">
+                <div class="flex gap-4 group">
+                    <div class="w-10 h-10 rounded-xl bg-dataview-blue/10 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-bullseye text-lg text-dataview-blue"></i>
+                    </div>
+                    <div>
+                        <h6 class="font-display font-bold text-dataview-dark mb-1 uppercase italic text-[10px] tracking-wider">Missão</h6>
+                        <p class="text-[10px] text-slate-500 leading-relaxed">Soluções de gestão que mitiguem riscos e potenciem lucros sustentáveis.</p>
                     </div>
                 </div>
 
-                <div class="relative" data-aos="zoom-in">
-                    <div class="aspect-square bg-dataview-navy rounded-[4rem] overflow-hidden rotate-3 flex items-center justify-center p-20">
-                         <i class="fa-solid fa-gear text-[15rem] text-white/5 animate-spin-slow absolute"></i>
-                         <div class="relative z-10 text-center">
-                            <i class="fa-solid fa-infinity text-8xl text-dataview-accent mb-8"></i>
-                            <h4 class="text-3xl font-display font-black text-white italic uppercase tracking-tighter leading-tight">Melhoria <br>Contínua</h4>
-                         </div>
+                <div class="flex gap-4 group">
+                    <div class="w-10 h-10 rounded-xl bg-dataview-accent/10 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-eye text-lg text-dataview-accent"></i>
                     </div>
-                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-dataview-accent rounded-full blur-3xl opacity-20"></div>
+                    <div>
+                        <h6 class="font-display font-bold text-dataview-dark mb-1 uppercase italic text-[10px] tracking-wider">Visão</h6>
+                        <p class="text-[10px] text-slate-500 leading-relaxed">Ser a referência nacional em auditoria estratégica em Luanda.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="py-32 bg-dataview-dark text-white">
-        <div class="max-w-[1600px] mx-auto px-8 grid lg:grid-cols-12 gap-20">
-            <div class="lg:col-span-7" data-aos="fade-up">
-                <span class="text-dataview-blue font-black uppercase tracking-[4px] text-xs block mb-6 italic">Perguntas Frequentes</span>
-                <h3 class="text-5xl mb-12 italic tracking-tighter">Dúvidas <span class="text-dataview-accent">Comuns</span>.</h3>
-                
-                <div class="space-y-6">
-                    <details class="group bg-white/5 border border-white/10 rounded-3xl p-8 cursor-pointer" open>
-                        <summary class="flex justify-between items-center font-display font-bold text-lg uppercase italic tracking-tight list-none">
-                            O que é necessário para abrir uma empresa em Angola?
-                            <span class="group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down text-dataview-accent"></i></span>
-                        </summary>
-                        <p class="mt-6 text-white/50 leading-relaxed text-sm">
-                            O processo envolve o Guiché Único da Empresa (GUE), incluindo a reserva de nome, estatutos sociais, obtenção do NIF e o alvará comercial. A DATAVIEW trata de todo o processo de licenciamento por si.
-                        </p>
-                    </details>
-                    <details class="group bg-white/5 border border-white/10 rounded-3xl p-8 cursor-pointer">
-                        <summary class="flex justify-between items-center font-display font-bold text-lg uppercase italic tracking-tight list-none">
-                            Como funciona o regime de IVA em Angola?
-                            <span class="group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down text-dataview-accent"></i></span>
-                        </summary>
-                        <p class="mt-6 text-white/50 leading-relaxed text-sm">
-                            Existem três regimes: Geral (14% ou 7%), Transitório e de Exclusão. A escolha depende do volume de faturação anual da sua empresa.
-                        </p>
-                    </details>
-                    <details class="group bg-white/5 border border-white/10 rounded-3xl p-8 cursor-pointer">
-                        <summary class="flex justify-between items-center font-display font-bold text-lg uppercase italic tracking-tight list-none">
-                            Quais as vantagens do Outsourcing Contabilístico?
-                            <span class="group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down text-dataview-accent"></i></span>
-                        </summary>
-                        <p class="mt-6 text-white/50 leading-relaxed text-sm">
-                            Redução de custos fixos, acesso a especialistas atualizados com a legislação AGT e foco total no seu core business, deixando a burocracia connosco.
-                        </p>
-                    </details>
+
+
+    <section id="servicos" class="py-12 section-divider bg-dataview-navy md:px-20 text-white relative">
+    <div class="max-w-[1440px] mx-auto px-8">
+        <!-- Header da Secção -->
+        <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+            <div class="max-w-2xl" data-aos="fade-right">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-[2px] bg-dataview-accent"></div>
+                    <span class="text-dataview-accent font-black uppercase tracking-[4px] text-[10px] block italic">Portfólio de Serviços</span>
                 </div>
+                <h3 class="text-5xl lg:text-6xl mb-6 font-black italic italic">Soluções <span class="text-dataview-blue">360º</span>.</h3>
+                <p class="text-white/50 text-lg italic">Serviços integrados para empresas que procuram liderança no mercado angolano.</p>
             </div>
-
-            <div class="lg:col-span-5 bg-dataview-blue p-12 rounded-[4rem] relative overflow-hidden" data-aos="fade-left">
-                <i class="fa-solid fa-folder-open absolute -right-10 -bottom-10 text-[15rem] text-white/10 rotate-12"></i>
-                <div class="relative z-10">
-                    <h4 class="text-3xl font-display font-black text-white mb-10 italic uppercase tracking-tighter">Central de <br>Downloads</h4>
-                    <div class="space-y-6">
-                        <div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl hover:bg-white/20 transition cursor-pointer">
-                            <div class="flex items-center gap-4">
-                                <i class="fa-solid fa-file-pdf text-2xl text-white"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest">Código do IVA 2026</span>
-                            </div>
-                            <i class="fa-solid fa-download text-sm"></i>
-                        </div>
-                        <div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl hover:bg-white/20 transition cursor-pointer">
-                            <div class="flex items-center gap-4">
-                                <i class="fa-solid fa-file-pdf text-2xl text-white"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest">Modelo 1 de I. Industrial</span>
-                            </div>
-                            <i class="fa-solid fa-download text-sm"></i>
-                        </div>
-                        <div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl hover:bg-white/20 transition cursor-pointer">
-                            <div class="flex items-center gap-4">
-                                <i class="fa-solid fa-file-pdf text-2xl text-white"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest">Nova Lei Geral do Trabalho</span>
-                            </div>
-                            <i class="fa-solid fa-download text-sm"></i>
-                        </div>
-                    </div>
-                    <button class="mt-12 w-full py-5 bg-dataview-dark text-white rounded-2xl text-[10px] font-black uppercase tracking-[4px] hover:scale-105 transition-all">Ver Todos os Documentos</button>
-                </div>
+            <div class="pb-4" data-aos="fade-left">
+                <a href="/catalogo.pdf" target="_blank" class="px-8 py-4 bg-white/5 border border-white/10 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-dataview-accent hover:text-dataview-navy transition-all duration-500 flex items-center gap-3">
+                    Baixar Catálogo PDF <i class="fa-solid fa-download"></i>
+                </a>
             </div>
         </div>
-    </section>
 
-    <section id="contacto" class="py-32 bg-white relative">
-        <div class="max-w-[1600px] mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
+        <!-- Grid de Serviços -->
+        <div class="grid md:grid-cols-2 md:pb-20 lg:grid-cols-4 gap-6">
+            
+            <!-- Serviço 1 -->
+            <div class="group p-8 bg-white/5 border border-white/5 rounded-[2.5rem] hover:bg-dataview-blue transition-all duration-500 hover:-translate-y-3" data-aos="fade-up">
+                <div class="w-16 h-16 rounded-2xl bg-dataview-blue/20 flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                    <i class="fa-solid fa-calculator text-2xl text-dataview-accent group-hover:text-white"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4 italic tracking-tight leading-tight">Contabilidade Geral e Analítica</h4>
+                <p class="text-white/40 group-hover:text-white/80 text-[13px] leading-relaxed mb-6">
+                    Processamento segundo o PGC, encerramento de contas e relatórios mensais de performance.
+                </p>
+                <ul class="space-y-2 text-[9px] font-black uppercase tracking-widest text-dataview-blue group-hover:text-white/70">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Balancetes</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Fluxos de Caixa</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div class="group p-8 bg-white/5 border border-white/5 rounded-[2.5rem] hover:bg-dataview-dark transition-all duration-500 hover:-translate-y-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 rounded-2xl bg-dataview-accent/20 flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                    <i class="fa-solid fa-scale-balanced text-2xl text-dataview-accent group-hover:text-white"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4 italic tracking-tight leading-tight">Consultoria Fiscal Estratégica</h4>
+                <p class="text-white/40 group-hover:text-white/80 text-[13px] leading-relaxed mb-6">
+                    Apuramento rigoroso de IVA, IRT e Imposto Industrial. Representação técnica junto da AGT.
+                </p>
+                <ul class="space-y-2 text-[9px] font-black uppercase tracking-widest text-dataview-accent group-hover:text-white/70">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Planeamento Fiscal</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Submissão AGT</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="group p-8 bg-white/5 border border-white/5 rounded-[2.5rem] hover:bg-dataview-blue transition-all duration-500 hover:-translate-y-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 rounded-2xl bg-dataview-blue/20 flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                    <i class="fa-solid fa-users-gear text-2xl text-dataview-accent group-hover:text-white"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4 italic tracking-tight leading-tight">Gestão de Capital Humano</h4>
+                <p class="text-white/40 group-hover:text-white/80 text-[13px] leading-relaxed mb-6">
+                    Processamento de salários, gestão de segurança social (INSS) e consultoria na LGT.
+                </p>
+                <ul class="space-y-2 text-[9px] font-black uppercase tracking-widest text-dataview-blue group-hover:text-white/70">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Mapas de Salários</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> IRT & INSS</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 4 -->
+            <div class="group p-8 bg-white/5 border border-white/5 rounded-[2.5rem] hover:bg-dataview-dark transition-all duration-500 hover:-translate-y-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 rounded-2xl bg-dataview-accent/20 flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                    <i class="fa-solid fa-magnifying-glass-chart text-2xl text-dataview-accent group-hover:text-white"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4 italic tracking-tight leading-tight">Auditoria & Compliance</h4>
+                <p class="text-white/40 group-hover:text-white/80 text-[13px] leading-relaxed mb-6">
+                    Exame às demonstrações financeiras e verificação de conformidade legal e de processos.
+                </p>
+                <ul class="space-y-2 text-[9px] font-black uppercase tracking-widest text-dataview-accent group-hover:text-white/70">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Auditoria Interna</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[10px]"></i> Gestão de Risco</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+  <section class="py-16 md:px-20 bg-dataview-silver/20">
+    <div class="max-w-[1280px] mx-auto px-8">
+        
+        <!-- Header mais próximo da tabela (mb-12) -->
+        <div class="text-center mb-12" data-aos="fade-up">
+            <span class="text-dataview-blue font-black uppercase tracking-[3px] text-[9px] block mb-3 italic">Observatório Fiscal 2026</span>
+            <h3 class="text-3xl lg:text-4xl text-dataview-dark italic font-black">Guia de Obrigações <span class="text-dataview-blue">AGT</span></h3>
+        </div>
+
+        <!-- Tabela com Border Radius e Padding reduzidos -->
+        <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-slate-100" data-aos="zoom-in">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-dataview-dark text-white font-display text-[9px] uppercase tracking-[2px]">
+                            <!-- Reduzi p-8 para p-5 -->
+                            <th class="p-5 pl-8">Imposto / Contribuição</th>
+                            <th class="p-5">Incidência / Taxa</th>
+                            <th class="p-5">Prazo de Entrega</th>
+                            <th class="p-5 text-center pr-8">Status 2026</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs">
+                        <!-- Linha 1 -->
+                        <tr class="border-b border-slate-50 hover:bg-dataview-light/10 transition">
+                            <td class="p-5 pl-8 font-bold text-dataview-dark italic text-sm">IVA</td>
+                            <td class="p-5 text-slate-500">7% ou 14% (Regime Geral)</td>
+                            <td class="p-5 text-slate-500">Até ao fim do mês seguinte</td>
+                            <td class="p-5 text-center pr-8">
+                                <span class="bg-green-50 text-green-600 border border-green-100 px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-tighter">Vigente</span>
+                            </td>
+                        </tr>
+                        <!-- Linha 2 -->
+                        <tr class="border-b border-slate-50 hover:bg-dataview-light/10 transition">
+                            <td class="p-5 pl-8 font-bold text-dataview-dark italic text-sm">IRT</td>
+                            <td class="p-5 text-slate-500">Progressivo (até 25%)</td>
+                            <td class="p-5 text-slate-500">Até ao dia 30 do mês seguinte</td>
+                            <td class="p-5 text-center pr-8">
+                                <span class="bg-green-50 text-green-600 border border-green-100 px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-tighter">Vigente</span>
+                            </td>
+                        </tr>
+                        <!-- Linha 3 -->
+                        <tr class="border-b border-slate-50 hover:bg-dataview-light/10 transition">
+                            <td class="p-5 pl-8 font-bold text-dataview-dark italic text-sm">Imposto Industrial</td>
+                            <td class="p-5 text-slate-500">25% (Taxa Geral)</td>
+                            <td class="p-5 text-slate-500">Declaração Modelo 1 (Maio)</td>
+                            <td class="p-5 text-center pr-8">
+                                <span class="bg-green-50 text-green-600 border border-green-100 px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-tighter">Vigente</span>
+                            </td>
+                        </tr>
+                        <!-- Linha 4 -->
+                        <tr class="hover:bg-dataview-light/10 transition">
+                            <td class="p-5 pl-8 font-bold text-dataview-dark italic text-sm">INSS</td>
+                            <td class="p-5 text-slate-500">3% (Trab.) + 8% (Empresa)</td>
+                            <td class="p-5 text-slate-500">Até ao dia 10 do mês seguinte</td>
+                            <td class="p-5 text-center pr-8">
+                                <span class="bg-green-50 text-green-600 border border-green-100 px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-tighter">Vigente</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Nota de rodapé mais discreta -->
+        <div class="mt-8 flex justify-center">
+            <p class="text-slate-400 italic text-[10px]">* Guia informativo 2026. Consulte os nossos técnicos para casos específicos.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="metodologia" class="py-16  lg:py-20 md:px-20 bg-white overflow-hidden">
+    <div class="max-w-[1280px] mx-auto px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            <!-- Coluna de Texto: Workflow -->
             <div data-aos="fade-right">
-                <span class="text-dataview-blue font-black uppercase tracking-[4px] text-xs block mb-6 italic">Agende uma reunião</span>
-                <h3 class="text-5xl lg:text-7xl text-dataview-dark mb-10">Pronto para <span class="text-dataview-blue">Decolar?</span>.</h3>
-                <p class="text-xl text-slate-500 mb-12 max-w-lg">Visite os nossos escritórios em Luanda ou solicite uma reunião virtual com um dos nossos consultores seniores.</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-8 h-[1.5px] bg-dataview-accent"></div>
+                    <span class="text-dataview-accent font-black uppercase tracking-[3px] text-[9px] block italic">Workflow</span>
+                </div>
+                <h3 class="text-4xl lg:text-5xl text-dataview-dark mb-10 font-black italic">Como <span class="text-dataview-blue">Operamos</span>.</h3>
                 
                 <div class="space-y-8">
-                    <div class="flex gap-6 items-center">
-                        <div class="w-14 h-14 rounded-2xl bg-dataview-silver flex items-center justify-center text-dataview-dark text-xl">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
+                    <!-- Passo 01 -->
+                    <div class="flex gap-6 group items-start">
+                        <div class="text-4xl lg:text-5xl font-display font-black text-dataview-accent group-hover:text-dataview-blue/30 transition-colors leading-none">01</div>
                         <div>
-                            <p class="text-[8px] font-black text-slate-400 uppercase tracking-widest">Linha de Apoio</p>
-                            <p class="text-xl font-bold text-dataview-dark">+244 923 000 000</p>
+                            <h5 class="text-base font-bold text-dataview-dark mb-2 uppercase italic tracking-tight">Diagnóstico e Triagem</h5>
+                            <p class="text-slate-500 leading-relaxed text-[13px] max-w-md">
+                                Avaliamos o estado atual da sua contabilidade e identificamos passivos ocultos ou irregularidades fiscais imediatas.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex gap-6 items-center">
-                        <div class="w-14 h-14 rounded-2xl bg-dataview-silver flex items-center justify-center text-dataview-dark text-xl">
-                            <i class="fa-solid fa-envelope-open-text"></i>
-                        </div>
+                    
+                    <!-- Passo 02 -->
+                    <div class="flex gap-6 group items-start">
+                        <div class="text-4xl lg:text-5xl font-display font-black text-dataview-accent group-hover:text-dataview-accent/30 transition-colors leading-none">02</div>
                         <div>
-                            <p class="text-[8px] font-black text-slate-400 uppercase tracking-widest">E-mail Corporativo</p>
-                            <p class="text-xl font-bold text-dataview-dark">comercial@dataview.ao</p>
+                            <h5 class="text-base font-bold text-dataview-dark mb-2 uppercase italic tracking-tight">Setup de Conformidade</h5>
+                            <p class="text-slate-500 leading-relaxed text-[13px] max-w-md">
+                                Implementação de processos digitais e organização documental sob as normas do <span class="font-bold text-dataview-dark italic">PGC</span> e <span class="font-bold text-dataview-dark italic">AGT</span>.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Passo 03 -->
+                    <div class="flex gap-6 group items-start">
+                        <div class="text-4xl lg:text-5xl font-display font-black text-dataview-accent group-hover:text-dataview-blue/30 transition-colors leading-none">03</div>
+                        <div>
+                            <h5 class="text-base font-bold text-dataview-dark mb-2 uppercase italic tracking-tight">Gestão e Reporting</h5>
+                            <p class="text-slate-500 leading-relaxed text-[13px] max-w-md">
+                                Monitorização contínua com entrega de relatórios de gestão, mapas fiscais e aconselhamento estratégico permanente.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="p-12 bg-white rounded-[4rem] shadow-2xl border border-slate-50" data-aos="flip-left">
-                <form class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <label class="text-[9px] font-black text-dataview-dark uppercase tracking-widest ml-2">Nome Completo</label>
-                            <input type="text" placeholder="Ex: João Manuel" class="w-full bg-slate-50 border-none rounded-2xl p-5 text-sm focus:ring-2 focus:ring-dataview-blue transition-all outline-none">
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[9px] font-black text-dataview-dark uppercase tracking-widest ml-2">Empresa</label>
-                            <input type="text" placeholder="Nome da sua instituição" class="w-full bg-slate-50 border-none rounded-2xl p-5 text-sm focus:ring-2 focus:ring-dataview-blue transition-all outline-none">
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <label class="text-[9px] font-black text-dataview-dark uppercase tracking-widest ml-2">Serviço de Interesse</label>
-                        <select class="w-full bg-slate-50 border-none rounded-2xl p-5 text-sm focus:ring-2 focus:ring-dataview-blue transition-all outline-none appearance-none">
-                            <option>Contabilidade Geral</option>
-                            <option>Consultoria Fiscal / AGT</option>
-                            <option>Gestão de Recursos Humanos</option>
-                            <option>Auditoria Independente</option>
-                        </select>
-                    </div>
-                    <div class="space-y-2">
-                        <label class="text-[9px] font-black text-dataview-dark uppercase tracking-widest ml-2">Mensagem</label>
-                        <textarea rows="4" placeholder="Descreva brevemente o seu projeto..." class="w-full bg-slate-50 border-none rounded-2xl p-5 text-sm focus:ring-2 focus:ring-dataview-blue transition-all outline-none"></textarea>
-                    </div>
-                    <button class="w-full py-6 bg-dataview-dark text-white rounded-2xl text-[10px] font-black uppercase tracking-[5px] hover:bg-dataview-blue transition-all shadow-xl shadow-dataview-dark/20">Enviar Solicitação</button>
-                </form>
+            <!-- Coluna Visual: Caixa de Melhoria Contínua -->
+            <div class="relative flex justify-center" data-aos="zoom-in">
+                <!-- Reduzi o tamanho da caixa de 400px+ para max-w-sm -->
+                <div class="aspect-square w-full max-w-[360px] bg-dataview-navy rounded-[3rem] overflow-hidden rotate-2 flex items-center justify-center p-12 shadow-2xl relative">
+                     <i class="fa-solid fa-gear text-[10rem] text-white/5 animate-spin-slow absolute opacity-50"></i>
+                     <div class="relative z-10 text-center">
+                        <i class="fa-solid fa-infinity text-6xl text-dataview-accent mb-6"></i>
+                        <h4 class="text-2xl font-display font-black text-white italic uppercase tracking-tighter leading-tight">Melhoria <br>Contínua</h4>
+                     </div>
+                </div>
+                <!-- Efeito Glow mais discreto -->
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-dataview-accent rounded-full blur-[80px] opacity-15"></div>
             </div>
+            
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="bg-dataview-navy text-white pt-32 pb-12 overflow-hidden relative">
-        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-dataview-blue opacity-[0.03] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+
+    <section id="faq" class="py-16 md:px-20 bg-dataview-dark text-white overflow-hidden">
+    <!-- Ajustado para 1440px para alinhar com o resto do site -->
+    <div class="max-w-[1440px] mx-auto px-8 grid lg:grid-cols-12 gap-12 lg:gap-16">
         
-        <div class="max-w-[1600px] mx-auto px-8 relative z-10">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32 border-b border-white/5 pb-32">
-                <div class="lg:col-span-1">
-                    <div class="flex items-center gap-3 mb-10">
-                        <div class="w-8 h-10 bg-white flex flex-col justify-end p-1">
-                            <div class="w-full bg-dataview-blue h-1/3 mb-1"></div>
-                            <div class="w-full bg-dataview-dark h-1/2"></div>
-                        </div>
-                        <span class="font-display font-black text-2xl tracking-tighter uppercase italic">DATAVIEW</span>
-                    </div>
-                    <p class="text-white/40 text-sm leading-relaxed italic mb-10">
-                        Lideramos o mercado de contabilidade estratégica em Luanda com rigor, ética e inovação tecnológica. Do seu património, cuidamos nós.
-                    </p>
-                    <div class="flex gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all cursor-pointer">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all cursor-pointer">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all cursor-pointer">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h5 class="font-display font-bold text-xs uppercase tracking-[4px] text-dataview-blue mb-10 italic">Acesso Rápido</h5>
-                    <ul class="space-y-5 text-[10px] font-bold text-white/50 uppercase tracking-[2px]">
-                        <li class="hover:text-white transition cursor-pointer">Sobre a Dataview</li>
-                        <li class="hover:text-white transition cursor-pointer">Nossa Metodologia</li>
-                        <li class="hover:text-white transition cursor-pointer">Carreiras / Recrutamento</li>
-                        <li class="hover:text-white transition cursor-pointer">Blog e Notícias Fiscais</li>
-                        <li class="hover:text-white transition cursor-pointer">Política de Privacidade</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h5 class="font-display font-bold text-xs uppercase tracking-[4px] text-dataview-blue mb-10 italic">Serviços Focados</h5>
-                    <ul class="space-y-5 text-[10px] font-bold text-white/50 uppercase tracking-[2px]">
-                        <li class="hover:text-white transition cursor-pointer">Auditoria de Contas</li>
-                        <li class="hover:text-white transition cursor-pointer">Outsourcing Financeiro</li>
-                        <li class="hover:text-white transition cursor-pointer">Processamento de Salários</li>
-                        <li class="hover:text-white transition cursor-pointer">Apoio ao Investidor</li>
-                        <li class="hover:text-white transition cursor-pointer">Legalização de Empresas</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h5 class="font-display font-bold text-xs uppercase tracking-[4px] text-dataview-blue mb-10 italic">Onde Estamos</h5>
-                    <div class="space-y-6 text-[10px] font-bold text-white/50 uppercase tracking-[2px]">
-                        <p class="leading-relaxed flex gap-4"><i class="fa-solid fa-map-pin text-dataview-accent"></i> Edifício Sky Center, Piso 4, <br>Talatona, Luanda - Angola</p>
-                        <p class="flex gap-4"><i class="fa-solid fa-phone text-dataview-accent"></i> (+244) 923 444 555</p>
-                        <p class="flex gap-4"><i class="fa-solid fa-envelope text-dataview-accent"></i> geral@dataview.ao</p>
-                    </div>
-                    <div class="mt-10 p-6 bg-white/5 rounded-2xl border border-white/5">
-                        <p class="text-[8px] italic text-white/30 mb-3">Subscreva a nossa Newsletter Fiscal</p>
-                        <div class="flex gap-2">
-                            <input type="text" placeholder="E-mail" class="bg-white/10 border-none rounded-lg p-3 text-[10px] w-full outline-none focus:ring-1 focus:ring-dataview-accent">
-                            <button class="bg-dataview-blue px-4 rounded-lg hover:bg-dataview-accent transition-colors"><i class="fa-solid fa-paper-plane text-xs"></i></button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Coluna das Perguntas (FAQ) -->
+        <div class="lg:col-span-7" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-[1.5px] bg-dataview-blue"></div>
+                <span class="text-dataview-blue font-black uppercase tracking-[3px] text-[9px] block italic">Perguntas Frequentes</span>
             </div>
+            <h3 class="text-4xl lg:text-5xl mb-10 italic font-black">Dúvidas <span class="text-dataview-accent">Comuns</span>.</h3>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 (Removido o 'open' para economizar espaço inicial) -->
+                <details class="group bg-white/5 border border-white/10 rounded-2xl p-5 cursor-pointer transition-all">
+                    <summary class="flex justify-between items-center font-display font-bold text-sm uppercase italic tracking-tight list-none">
+                        O que é necessário para abrir uma empresa em Angola?
+                        <span class="group-open:rotate-180 transition-transform text-dataview-accent"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-white/50 leading-relaxed text-[13px] border-t border-white/5 pt-4">
+                        O processo envolve o GUE, reserva de nome, estatutos, NIF e alvará. A <span class="text-white">DATAVIEW</span> trata de todo o licenciamento por si.
+                    </p>
+                </details>
 
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-[9px] font-black uppercase tracking-[4px] text-white/20">
-                <p>&copy; 2026 DATAVIEW CONTABILIDADE & GESTÃO - LDA. NIF: 5410000000.</p>
-                <div class="flex gap-10">
-                    <span class="text-white/40">Powered by DV Strategic Tech</span>
-                    <span class="flex items-center gap-2"><div class="w-3 h-[2px] bg-dataview-accent"></div> Orgulho em Angola</span>
+                <!-- FAQ Item 2 -->
+                <details class="group bg-white/5 border border-white/10 rounded-2xl p-5 cursor-pointer transition-all">
+                    <summary class="flex justify-between items-center font-display font-bold text-sm uppercase italic tracking-tight list-none">
+                        Como funciona o regime de IVA em Angola?
+                        <span class="group-open:rotate-180 transition-transform text-dataview-accent"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-white/50 leading-relaxed text-[13px] border-t border-white/5 pt-4">
+                        Existem três regimes: Geral (14% ou 7%), Transitório e de Exclusão, dependendo do seu volume de faturação anual.
+                    </p>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="group bg-white/5 border border-white/10 rounded-2xl p-5 cursor-pointer transition-all">
+                    <summary class="flex justify-between items-center font-display font-bold text-sm uppercase italic tracking-tight list-none">
+                        Vantagens do Outsourcing Contabilístico?
+                        <span class="group-open:rotate-180 transition-transform text-dataview-accent"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-white/50 leading-relaxed text-[13px] border-t border-white/5 pt-4">
+                        Redução de custos fixos, acesso a especialistas em legislação <span class="text-white">AGT</span> e foco total no seu core business.
+                    </p>
+                </details>
+            </div>
+        </div>
+
+        <!-- Coluna de Downloads: Mais estreita e elegante -->
+        <div class="lg:col-span-5 bg-dataview-blue p-8 lg:p-10 rounded-[3rem] relative overflow-hidden self-start" data-aos="fade-left">
+            <i class="fa-solid fa-folder-open absolute -right-6 -bottom-6 text-[10rem] text-white/10 rotate-12"></i>
+            <div class="relative z-10">
+                <h4 class="text-2xl font-display font-black text-white mb-8 italic uppercase tracking-tighter">Central de <br>Downloads</h4>
+                
+                <div class="space-y-4">
+                    <!-- Link Download -->
+                    <div class="flex items-center justify-between p-4 bg-white/10 rounded-xl hover:bg-white/20 transition group cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-file-pdf text-xl text-white/80 group-hover:text-white"></i>
+                            <span class="text-[9px] font-black uppercase tracking-widest leading-none">Código do IVA 2026</span>
+                        </div>
+                        <i class="fa-solid fa-download text-xs opacity-50 group-hover:opacity-100"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 bg-white/10 rounded-xl hover:bg-white/20 transition group cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-file-pdf text-xl text-white/80 group-hover:text-white"></i>
+                            <span class="text-[9px] font-black uppercase tracking-widest leading-none">Modelo 1 I. Industrial</span>
+                        </div>
+                        <i class="fa-solid fa-download text-xs opacity-50 group-hover:opacity-100"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 bg-white/10 rounded-xl hover:bg-white/20 transition group cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-file-pdf text-xl text-white/80 group-hover:text-white"></i>
+                            <span class="text-[9px] font-black uppercase tracking-widest leading-none">Lei Geral do Trabalho</span>
+                        </div>
+                        <i class="fa-solid fa-download text-xs opacity-50 group-hover:opacity-100"></i>
+                    </div>
+                </div>
+
+                <button class="mt-8 w-full py-4 bg-dataview-dark text-white rounded-xl text-[9px] font-black uppercase tracking-[3px] hover:bg-black transition-all">Ver Todos os Documentos</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contacto" class="py-16 md:px-20 lg:py-16 bg-white relative overflow-hidden">
+    <!-- Container alinhado aos 1440px do Figma -->
+    <div class="max-w-[1440px] mx-auto px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        
+        <!-- Info de Contacto -->
+        <div data-aos="fade-right">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-8 h-[1.5px] bg-dataview-blue"></div>
+                <span class="text-dataview-blue font-black uppercase tracking-[3px] text-[9px] block italic">Agende uma reunião</span>
+            </div>
+            <h3 class="text-4xl lg:text-5xl text-dataview-dark mb-6 font-black italic">Pronto para <br><span class="text-dataview-blue">Decolar?</span></h3>
+            <p class="text-base text-slate-500 mb-10 max-w-md leading-relaxed">
+                Visite-nos em Luanda ou solicite uma reunião virtual com os nossos consultores seniores.
+            </p>
+            
+            <div class="space-y-6">
+                <div class="flex gap-5 items-center group">
+                    <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-dataview-dark text-lg group-hover:bg-dataview-blue group-hover:text-white transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <p class="text-[8px] font-black text-slate-400 uppercase tracking-widest">Linha de Apoio</p>
+                        <p class="text-lg font-bold text-dataview-dark">+244 923 000 000</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center group">
+                    <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-dataview-dark text-lg group-hover:bg-dataview-blue group-hover:text-white transition-all">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <div>
+                        <p class="text-[8px] font-black text-slate-400 uppercase tracking-widest">E-mail Corporativo</p>
+                        <p class="text-lg font-bold text-dataview-dark">comercial@dataview.ao</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Formulário: Compactado para ecrãs menores -->
+        <div class="p-8 lg:p-10 bg-white rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-50" data-aos="flip-left">
+            <form class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="space-y-1.5">
+                        <label class="text-[8px] font-black text-dataview-dark uppercase tracking-widest ml-2">Nome Completo</label>
+                        <input type="text" placeholder="Ex: João Manuel" class="w-full bg-slate-50 border-none rounded-xl p-4 text-xs focus:ring-2 focus:ring-dataview-blue transition-all outline-none">
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-[8px] font-black text-dataview-dark uppercase tracking-widest ml-2">Empresa</label>
+                        <input type="text" placeholder="Nome da instituição" class="w-full bg-slate-50 border-none rounded-xl p-4 text-xs focus:ring-2 focus:ring-dataview-blue transition-all outline-none">
+                    </div>
+                </div>
+                
+                <div class="space-y-1.5">
+                    <label class="text-[8px] font-black text-dataview-dark uppercase tracking-widest ml-2">Serviço de Interesse</label>
+                    <select class="w-full bg-slate-50 border-none rounded-xl p-4 text-xs focus:ring-2 focus:ring-dataview-blue transition-all outline-none appearance-none cursor-pointer">
+                        <option>Contabilidade Geral</option>
+                        <option>Consultoria Fiscal / AGT</option>
+                        <option>Gestão de Recursos Humanos</option>
+                        <option>Auditoria Independente</option>
+                    </select>
+                </div>
+
+                <div class="space-y-1.5">
+                    <label class="text-[8px] font-black text-dataview-dark uppercase tracking-widest ml-2">Mensagem</label>
+                    <textarea rows="3" placeholder="Descreva brevemente o seu projeto..." class="w-full bg-slate-50 border-none rounded-xl p-4 text-xs focus:ring-2 focus:ring-dataview-blue transition-all outline-none resize-none"></textarea>
+                </div>
+
+                <button class="w-full py-4 bg-dataview-dark text-white rounded-xl text-[9px] font-black uppercase tracking-[4px] hover:bg-dataview-blue transition-all shadow-lg shadow-dataview-dark/10">
+                    Enviar Solicitação
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer class="bg-dataview-navy text-white pt-16 md:px-20 pb-8 overflow-hidden relative border-t border-white/5">
+    <!-- Efeito de Glow mais contido -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-dataview-blue opacity-[0.02] rounded-full translate-x-1/3 -translate-y-1/3"></div>
+    
+    <div class="max-w-[1440px] mx-auto px-8 relative z-10">
+        <!-- Grid Principal: Espaçamentos reduzidos de gap-20/pb-32 para gap-12/pb-16 -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/5 pb-16">
+            
+            <!-- Branding e Social -->
+            <div class="lg:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <!-- Logo -->
+                    <div class="relative w-auto h-auto  flex flex-col justify-end p-1 overflow-hidden transition-transform group-hover:scale-105">
+                        <img src="./img/2-removebg-preview.png" alt="DataView Logo" class="md:w-32 w-24 h-auto object-contain">
+                    </div>
+    
+                </div>
+                <p class="text-white/40 text-[12px] leading-relaxed italic mb-8 max-w-xs">
+                    Lideramos o mercado de contabilidade estratégica em Luanda com rigor e inovação tecnológica. Do seu património, cuidamos nós.
+                </p>
+                <div class="flex gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all cursor-pointer">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    </div>
+                    <div class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all cursor-pointer">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </div>
+                    <div class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-dataview-accent hover:text-dataview-navy transition-all cursor-pointer">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links Rápidos -->
+            <div>
+                <h5 class="font-display font-bold text-[10px] uppercase tracking-[3px] text-dataview-blue mb-8 italic">Acesso Rápido</h5>
+                <ul class="space-y-4 text-[9px] font-bold text-white/50 uppercase tracking-[2px]">
+                    <li class="hover:text-white transition cursor-pointer flex items-center gap-2">
+                        <div class="w-1 h-1 bg-dataview-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div> Sobre a Dataview
+                    </li>
+                    <li class="hover:text-white transition cursor-pointer">Nossa Metodologia</li>
+                    <li class="hover:text-white transition cursor-pointer">Carreiras</li>
+                    <li class="hover:text-white transition cursor-pointer">Notícias Fiscais</li>
+                    <li class="hover:text-white transition cursor-pointer">Privacidade</li>
+                </ul>
+            </div>
+
+            <!-- Serviços -->
+            <div>
+                <h5 class="font-display font-bold text-[10px] uppercase tracking-[3px] text-dataview-blue mb-8 italic">Serviços Focados</h5>
+                <ul class="space-y-4 text-[9px] font-bold text-white/50 uppercase tracking-[2px]">
+                    <li class="hover:text-white transition cursor-pointer">Auditoria de Contas</li>
+                    <li class="hover:text-white transition cursor-pointer">Outsourcing Financeiro</li>
+                    <li class="hover:text-white transition cursor-pointer">Processamento Salarial</li>
+                    <li class="hover:text-white transition cursor-pointer">Apoio ao Investidor</li>
+                    <li class="hover:text-white transition cursor-pointer">Legalização AGT</li>
+                </ul>
+            </div>
+
+            <!-- Contacto e Newsletter -->
+            <div>
+                <h5 class="font-display font-bold text-[10px] uppercase tracking-[3px] text-dataview-blue mb-8 italic">Onde Estamos</h5>
+                <div class="space-y-4 text-[9px] font-bold text-white/50 uppercase tracking-[2px] mb-8">
+                    <p class="leading-relaxed flex gap-3"><i class="fa-solid fa-map-pin text-dataview-accent mt-0.5"></i> Sky Center, Talatona, Luanda</p>
+                    <p class="flex gap-3"><i class="fa-solid fa-phone text-dataview-accent"></i> (+244) 923 444 555</p>
+                </div>
+                <div class="p-5 bg-white/5 rounded-xl border border-white/5">
+                    <p class="text-[8px] italic text-white/30 mb-3 uppercase tracking-widest">Newsletter Fiscal</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="E-mail" class="bg-white/10 border-none rounded-lg py-2 px-3 text-[10px] w-full outline-none focus:ring-1 focus:ring-dataview-accent">
+                        <button class="bg-dataview-blue px-3 rounded-lg hover:bg-dataview-accent transition-colors"><i class="fa-solid fa-paper-plane text-[10px]"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-[8px] font-black uppercase tracking-[3px] text-white/20 text-center md:text-left">
+            <p>&copy; 2026 DATAVIEW CONTABILIDADE & GESTÃO - LDA. NIF: 5410000000.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <span class="text-white/40">Powered by DV Strategic Tech</span>
+                <span class="flex items-center gap-2"><div class="w-3 h-[1px] bg-dataview-accent"></div> Orgulho em Angola</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
