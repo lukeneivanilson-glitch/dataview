@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <div className="relative w-auto h-auto flex flex-col justify-end p-1 overflow-hidden transition-transform group-hover:scale-105">
                 <img
-                  src="public/img/2-removebg-preview.png"
+                  src="/img/2-removebg-preview.png"
                   alt="DataView Logo"
                   className="md:w-32 w-24 h-auto object-contain"
                 />
