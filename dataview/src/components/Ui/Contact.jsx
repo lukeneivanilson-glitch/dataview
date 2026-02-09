@@ -4,7 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   // 1. Configuração do Formspree (Substitua 'SEU_ID' pelo ID real da sua conta)
-  const [state, handleSubmit] = useForm("SEU_ID");
+  const [state, handleSubmit] = useForm("f/xjgekjje");
 
   // 2. Função para lidar com o envio
   const handleFormSubmit = async (e) => {
