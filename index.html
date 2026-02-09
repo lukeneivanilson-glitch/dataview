@@ -82,7 +82,7 @@
 </div>
 
 <!-- NAVBAR: Altura otimizada e alinhada -->
-<nav class="sticky top-0 z-[100] glass-nav border-b border-white/5 transition-all duration-500" id="mainNav">
+<nav class="sticky top-0 z-[100] glass-nav border-b border-white/5 " id="mainNav">
     <div class="max-w-[1440px] mx-auto px-12 py-4 flex justify-between items-center">
         <!-- Logo -->
             <div class="relative w-auto h-auto  flex flex-col justify-end p-1 overflow-hidden transition-transform group-hover:scale-105">
@@ -118,7 +118,7 @@
 </nav>
 
 <!-- HERO SECTION: Altura calculada para evitar scroll -->
-<section id="home" class="relative  h-[calc(100vh-140px)] min-h-[600px] flex items-center overflow-hidden">
+<section id="home" class="relative  h-[calc(100vh-140px)] min-h-[600px] flex items-start pt-12 overflow-hidden">
     <!-- BG e Efeitos -->
     <div class="absolute inset-0 z-0">
         <img src="./img/home.jpg" class="w-full h-full object-cover">
@@ -163,9 +163,9 @@
         </div>
 
         <!-- Card de Estatísticas -->
-        <div class="lg:col-span-5 relative hidden lg:block" data-aos="zoom-in">
-            <div class="relative z-10 p-1 border-dataview-blue backdrop-blur-sm from-white/20 to-transparent rounded-[2.5rem] shadow-2xl">
-                <div class="bg-dataview-navy rounded-[2.3rem] overflow-hidden border border-white/10 p-8">
+        <div class="lg:col-span-5 md:pt-28 relative hidden lg:block" data-aos="zoom-in">
+            <div class="relative z-10 p-1 border-dataview-blue rounded-[2.5rem] shadow-2xl">
+                <div class="backdrop-blur-sm bg-dataview-navy  rounded-[2.3rem] overflow-hidden border border-white/10 p-8">
                     <div class="space-y-6">
                         <div>
                             <div class="flex justify-between text-[9px] text-white/60 mb-2 uppercase font-bold tracking-widest">
@@ -224,8 +224,8 @@
 <div class="relative w-full md:w-96 lg:w-full mx-auto lg:mx-0 md:px-20" data-aos="fade-up">
     
     <!-- Container da Imagem -->
-    <div class="aspect-square bg-dataview-silver rounded-[3rem] lg:rounded-[3.5rem] overflow-hidden relative group shadow-2xl">
-        <img src="https://images.unsplash.com/photo-1600880212319-7524e272792b?q=80&w=2070" 
+    <div class="aspect-square bg-dataview-silver background-center rounded-[3rem] lg:rounded-[3.5rem] overflow-hidden relative group shadow-2xl">
+        <img src="./img/pexels-gustavo-fring-7446945.jpg" 
              class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
              alt="Equipa Dataview">
         <div class="absolute inset-0 bg-dataview-dark/10 group-hover:bg-transparent transition-colors"></div>
@@ -499,7 +499,7 @@
             <!-- Coluna Visual: Caixa de Melhoria Contínua -->
             <div class="relative flex justify-center" data-aos="zoom-in">
                 <!-- Reduzi o tamanho da caixa de 400px+ para max-w-sm -->
-                <div class="aspect-square w-full max-w-[360px] bg-dataview-navy rounded-[3rem] overflow-hidden rotate-2 flex items-center justify-center p-12 shadow-2xl relative">
+                <div style="background-image: url('./img/pexels-gustavo-fring-7446945.jpg');" class="aspect-square w-full max-w-[360px] bg-dataview-navy rounded-[3rem] overflow-hidden rotate-2 flex items-center justify-center p-12 shadow-2xl relative">
                      <i class="fa-solid fa-gear text-[10rem] text-white/5 animate-spin-slow absolute opacity-50"></i>
                      <div class="relative z-10 text-center">
                         <i class="fa-solid fa-infinity text-6xl text-dataview-accent mb-6"></i>
@@ -507,7 +507,7 @@
                      </div>
                 </div>
                 <!-- Efeito Glow mais discreto -->
-                <div class="absolute -top-6 -left-6 w-32 h-32 bg-dataview-accent rounded-full blur-[80px] opacity-15"></div>
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-dataview-accent rounded-full blur-[80px] opacity-"></div>
             </div>
             
         </div>
@@ -603,7 +603,7 @@
 </section>
 
 
-    <section id="contacto" class="py-16 md:px-20 lg:py-16 bg-white relative overflow-hidden">
+    <section id="contacto" class="py-16 md:px-20 lg:py-12 bg-white relative overflow-hidden">
     <!-- Container alinhado aos 1440px do Figma -->
     <div class="max-w-[1440px] mx-auto px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
@@ -776,17 +776,7 @@
             offset: 100
         });
 
-        // Efeito do Header no Scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('mainNav');
-            if(window.scrollY > 50) {
-                nav.classList.add('py-3', 'shadow-2xl', 'bg-dataview-navy');
-                nav.classList.remove('py-5', 'bg-dataview-navy/90');
-            } else {
-                nav.classList.remove('py-3', 'shadow-2xl', 'bg-dataview-navy');
-                nav.classList.add('py-5', 'bg-dataview-navy/90');
-            }
-        });
+
 
         // Smooth Scroll para Âncoras
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
